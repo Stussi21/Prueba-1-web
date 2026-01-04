@@ -1,0 +1,278 @@
+/* Importar fuentes de Google Fonts */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Encabezado y Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x800/FFA07A/FFFFFF?text=Tacos+de+Pastor') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para separar la nav del contenido hero */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; /* Para que el padding no desborde */
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFD700; /* Dorado */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Dorado */
+}
+
+.hero-content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px; /* Espacio para el footer si el hero es grande */
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+#verMenuBtn {
+    background-color: #FFD700; /* Dorado */
+    color: #8B4513; /* Marrón oscuro para contraste */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#verMenuBtn:hover {
+    background-color: #FFC107; /* Un poco más oscuro */
+    transform: translateY(-3px);
+}
+
+/* Secciones generales */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    color: #8B4513; /* Marrón oscuro */
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Sección del Menú */
+.menu-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: fixed; /* Para que aparezca sobre todo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh; /* Para que no sea demasiado alto en pantallas pequeñas */
+    overflow-y: auto; /* Permite scroll si el menú es muy largo */
+    z-index: 1000; /* Para que esté por encima de otros elementos */
+}
+
+.menu-section.hidden {
+    display: none;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.menu-item {
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: #FF5733; /* Naranja rojizo */
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.menu-item p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.menu-item span {
+    font-weight: 700;
+    color: #8B4513; /* Marrón oscuro */
+    font-size: 1.1em;
+    display: block; /* Para que el precio esté en su propia línea */
+    text-align: right;
+}
+
+#cerrarMenuBtn {
+    background-color: #8B4513; /* Marrón oscuro */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+}
+
+#cerrarMenuBtn:hover {
+    background-color: #5A2D0C;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+        background-color: rgba(0,0,0,0.8);
+    }
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap; /* Permite que los elementos de la lista se envuelvan */
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 10px 10px 10px; /* Margen para pantallas pequeñas */
+    }
+    .logo {
+        font-size: 2em;
+    }
+    .hero h1 {
+        font-size: 3em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    #verMenuBtn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+    section h2 {
+        font-size: 2.5em;
+    }
+    .menu-items {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .logo {
+        font-size: 1.8em;
+    }
+}
