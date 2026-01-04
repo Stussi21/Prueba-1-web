@@ -3,107 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Rincón del Taco | Deliciosos Tacos Frescos</title>
+    <title>La Trinidad | Café & Emporio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <nav>
+            <div class="logo">LA TRINIDAD</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#emporio">Emporio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
         <div class="hero">
-            <nav>
-                <div class="logo">
-                    <span>🌮</span> El Rincón del Taco
-                </div>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#acerca">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
             <div class="hero-content">
-                <h1>El Auténtico Sabor Mexicano</h1>
-                <p>Ven y disfruta de los mejores tacos, preparados con ingredientes frescos y pasión.</p>
-                <button id="verMenuBtn">Ver Nuestro Menú</button>
+                <span>CAFÉ DE ESPECIALIDAD</span>
+                <h1>Momentos únicos en cada grano</h1>
+                <p>Descubre la calidez de nuestro emporio y déjate cautivar por aromas seleccionados.</p>
+                <button id="verMenuBtn">Explorar la Carta</button>
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="menu-section" class="menu-section hidden">
-            <h2>Nuestro Menú</h2>
-            <div class="menu-item">
-    <img src="descarga.jfif" class="menu-img">
-    
-    <h3>Taco al Pastor</h3>
-    <p>Carne de cerdo marinada, piña, cilantro y cebolla.</p>
-    <span>$2.50</span>
-</div>
+    <section id="menu-section" class="menu-modal hidden">
+        <div class="modal-content">
+            <button id="cerrarMenuBtn" class="close-btn">&times;</button>
+            <h2>Nuestra Carta</h2>
+            
+            <div class="menu-category">
+                <h3>Cafetería</h3>
                 <div class="menu-item">
-                    <h3>Taco de Carnitas</h3>
-                    <p>Suave carne de cerdo confitada, cebolla y cilantro.</p>
-                    <span>$2.75</span>
+                    <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?q=80&w=300" alt="Latte" class="menu-img">
+                    <div class="item-info">
+                        <h4>Caffè Latte <span>$3.200</span></h4>
+                        <p>Espresso con leche cremosa y un toque de arte.</p>
+                    </div>
                 </div>
                 <div class="menu-item">
-                    <h3>Taco de Bistec</h3>
-                    <p>Tierna carne de res a la parrilla, cebolla y cilantro.</p>
-                    <span>$2.75</span>
-                </div>
-                <div class="menu-item">
-                    <h3>Taco de Suadero</h3>
-                    <p>Tradicional carne de res, cebolla y cilantro.</p>
-                    <span>$2.50</span>
-                </div>
-                <div class="menu-item">
-                    <h3>Taco de Cochinita Pibil</h3>
-                    <p>Cerdo marinado en achiote, con cebolla morada encurtida.</p>
-                    <span>$3.00</span>
-                </div>
-                <div class="menu-item">
-                    <h3>Taco Vegetariano</h3>
-                    <p>Hongos portobello, pimientos, cebolla y queso fresco.</p>
-                    <span>$2.75</span>
+                    <img src="taco.jfif" alt="Capuccino" class="menu-img">
+                    <div class="item-info">
+                        <h4>Capuccino Tradicional <span>$3.500</span></h4>
+                        <p>Doble carga de café con espuma de leche densa.</p>
+                    </div>
                 </div>
             </div>
-            <button id="cerrarMenuBtn">Cerrar Menú</button>
-        </section>
 
-        <section id="acerca">
-            <h2>Acerca de Nosotros</h2>
-            <p>En "El Rincón del Taco", creemos que la comida es una expresión de cultura y tradición. Desde 20XX, nos hemos dedicado a traer los sabores auténticos de México a tu mesa. Cada taco es una obra de arte, preparada con amor, los ingredientes más frescos y las recetas que han pasado de generación en generación.</p>
-            <p>Ven y únete a nuestra familia. ¡Te esperamos con el mejor ambiente y el sabor inconfundible de México!</p>
-            <img src="https://via.placeholder.com/600x400/FF5733/FFFFFF?text=Nuestro+Restaurante" alt="Interior del restaurante de tacos">
-        </section>
+            <div class="menu-category">
+                <h3>Pastelería</h3>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=300" alt="Croissant" class="menu-img">
+                    <div class="item-info">
+                        <h4>Croissant de Mantequilla <span>$2.800</span></h4>
+                        <p>Hojaldre francés artesanal, horneado cada mañana.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes alguna pregunta o quieres hacer un pedido grande? ¡Escríbenos!</p>
-            <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad de los Tacos</p>
-            <p><strong>Teléfono:</strong> (123) 456-7890</p>
-            <p><strong>Horario:</strong> Lunes a Sábado: 12:00 PM - 10:00 PM</p>
-            <p><strong>Email:</strong> info@elrincondeltaco.com</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 El Rincón del Taco. Todos los derechos reservados.</p>
+    <footer id="contacto">
+        <p>Visítanos en nuestra casa matriz | Abierto de Lunes a Domingo</p>
+        <p>© 2024 La Trinidad Emporio - Demo Profesional</p>
     </footer>
 
-    <script>
-    const verMenuBtn = document.getElementById('verMenuBtn');
-    const cerrarMenuBtn = document.getElementById('cerrarMenuBtn');
-    const menuSection = document.getElementById('menu-section');
-
-    verMenuBtn.onclick = function() {
-        menuSection.classList.remove('hidden');
-        menuSection.style.display = 'block'; // Fuerza a que se vea
-    };
-
-    cerrarMenuBtn.onclick = function() {
-        menuSection.classList.add('hidden');
-        menuSection.style.display = 'none'; // Lo vuelve a ocultar
-    };
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
