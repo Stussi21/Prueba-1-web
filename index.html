@@ -89,6 +89,20 @@
         <p>&copy; 2023 El Rincón del Taco. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+    const verMenuBtn = document.getElementById('verMenuBtn');
+    const cerrarMenuBtn = document.getElementById('cerrarMenuBtn');
+    const menuSection = document.getElementById('menu-section');
+
+    verMenuBtn.onclick = function() {
+        menuSection.classList.remove('hidden');
+        menuSection.style.display = 'block'; // Fuerza a que se vea
+    };
+
+    cerrarMenuBtn.onclick = function() {
+        menuSection.classList.add('hidden');
+        menuSection.style.display = 'none'; // Lo vuelve a ocultar
+    };
+</script>
 </body>
 </html>
