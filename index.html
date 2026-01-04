@@ -8,55 +8,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">LA TRINIDAD</div>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#emporio">Emporio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <div class="hero-content">
-                <span>CAFÉ DE ESPECIALIDAD</span>
-                <h1>Momentos únicos en cada grano</h1>
-                <p>Descubre la calidez de nuestro emporio y déjate cautivar por aromas seleccionados.</p>
-                <button id="verMenuBtn">Explorar la Carta</button>
-            </div>
+    <nav>
+        <div class="logo">LA TRINIDAD</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#carta">La Carta</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <span>CAFÉ DE ESPECIALIDAD</span>
+            <h1>Momentos únicos en cada grano</h1>
+            <a href="#carta" class="btn-lujo">Explorar la Carta</a>
         </div>
     </header>
 
-    <section id="menu-section" class="menu-modal hidden">
-        <div class="modal-content">
-            <button id="cerrarMenuBtn" class="close-btn">&times;</button>
-            <h2>Nuestra Carta</h2>
-            
-            <div class="menu-category">
-                <h3>Cafetería</h3>
-                <div class="menu-item">
-                    <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?q=80&w=300" alt="Latte" class="menu-img">
-                    <div class="item-info">
-                        <h4>Caffè Latte <span>$3.200</span></h4>
-                        <p>Espresso con leche cremosa y un toque de arte.</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="taco.jfif" alt="Capuccino" class="menu-img">
-                    <div class="item-info">
-                        <h4>Capuccino Tradicional <span>$3.500</span></h4>
+    <section id="carta" class="menu-container">
+        <h2 class="titulo-seccion">Nuestra Selección</h2>
+        
+        <div class="categoria">
+            <h3>Cafetería</h3>
+            <div class="grid-menu">
+                <div class="item">
+                    <img src="taco.jfif" alt="Café" class="img-item">
+                    <div class="info">
+                        <h4>Capuccino Tradicional <span class="precio">$3.500</span></h4>
                         <p>Doble carga de café con espuma de leche densa.</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="menu-category">
-                <h3>Pastelería</h3>
-                <div class="menu-item">
-                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=300" alt="Croissant" class="menu-img">
-                    <div class="item-info">
-                        <h4>Croissant de Mantequilla <span>$2.800</span></h4>
-                        <p>Hojaldre francés artesanal, horneado cada mañana.</p>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?q=80&w=300" alt="Latte" class="img-item">
+                    <div class="info">
+                        <h4>Caffè Latte <span class="precio">$3.200</span></h4>
+                        <p>Espresso con leche cremosa y un toque de arte.</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +53,5 @@
         <p>Visítanos en nuestra casa matriz | Abierto de Lunes a Domingo</p>
         <p>© 2024 La Trinidad Emporio - Demo Profesional</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
