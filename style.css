@@ -276,3 +276,10 @@ footer {
         font-size: 1.8em;
     }
 }
+.menu-img {
+    width: 100%;       /* Ocupa el ancho de la tarjetita */
+    height: 150px;     /* Altura fija para que todas sean iguales */
+    object-fit: cover; /* Recorta la imagen para que no se deforme */
+    border-radius: 5px;/* Bordes redondeados para que se vea moderno */
+    margin-bottom: 15px;
+}
